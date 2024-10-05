@@ -1,0 +1,22 @@
+{
+  "name": "-cy-api-demo",
+  "version": "1.0.0",
+  "main": "cypress.config.js",
+  "types": "module",
+  "scripts": {
+    "report:merge": "mochawesome-merge cypress/reports/json/*.json > index.json",
+    "report:generate": "marge index.json --reportDir public --assetsDir public/assets --reportPageTitle index.html"
+  },
+  "author": "MashaTM",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "cypress": "^13.15.0",
+    "cypress-multi-reporters": "^1.6.4",
+    "faker": "^6.6.6",
+    "mocha": "^10.7.3",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0"
+  }
+}
